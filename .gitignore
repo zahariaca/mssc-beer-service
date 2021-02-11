@@ -139,3 +139,10 @@ Desktop.ini
 ######################
 .eslintcache
 /.idea/
+/target/classes/application.properties
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/surefire-reports/guru.springframework.msscbeerservice.MsscBeerServiceApplicationTests.txt
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/surefire-reports/TEST-guru.springframework.msscbeerservice.MsscBeerServiceApplicationTests.xml
