@@ -148,3 +148,5 @@ Desktop.ini
 /target/surefire-reports/TEST-guru.springframework.msscbeerservice.MsscBeerServiceApplicationTests.xml
 /target/mssc-beer-service-0.0.1-SNAPSHOT.jar.original
 /target/maven-archiver/pom.properties
+/target/surefire-reports/guru.springframework.msscbeerservice.web.controller.BeerControllerTest.txt
+/target/surefire-reports/TEST-guru.springframework.msscbeerservice.web.controller.BeerControllerTest.xml
