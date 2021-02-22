@@ -6,7 +6,7 @@ import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 
 @Mapper(uses = DateMapper.class)
-@DecoratedWith(BeerMapperDecorator.class)
+@DecoratedWith(value = BeerMapperDecorator.class)
 public interface BeerMapper {
     BeerDto beerToBeerDto(Beer beer);
 

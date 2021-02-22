@@ -12,6 +12,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -63,11 +64,13 @@ public class BeerServiceImpl implements BeerService {
             beerPage = beerRepository.findAll(pageRequest);
         }
 
-        beerPageList = new BeerPageList(beerPage
+        List<BeerDto> beerDtos = beerPage
                 .getContent()
                 .stream()
                 .map(beerMapper::beerToBeerDto)
-                .collect(Collectors.toList()),
+                .collect(Collectors.toList());
+
+        beerPageList = new BeerPageList(beerDtos,
                 PageRequest.of(beerPage.getPageable().getPageNumber(),
                         beerPage.getPageable().getPageSize()),
                 beerPage.getTotalElements());
