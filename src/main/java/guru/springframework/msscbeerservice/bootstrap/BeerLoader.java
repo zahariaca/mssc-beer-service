@@ -10,6 +10,9 @@ import java.math.BigDecimal;
 @Component
 public class BeerLoader implements CommandLineRunner {
     private final BeerRepository beerRepository;
+    public static final String BEER_1_UPC = "0631234200036";
+    public static final String BEER_2_UPC = "0631234300019";
+    public static final String BEER_3_UPC = "0083783375213";
 
     public BeerLoader(BeerRepository beerRepository) {
         this.beerRepository = beerRepository;
@@ -26,7 +29,7 @@ public class BeerLoader implements CommandLineRunner {
                     .beerName("Mango Bobs")
                     .beerStyle("IPA")
                     .quantityToBrew(200)
-                    .upc(337010000001L)
+                    .upc(BEER_1_UPC)
                     .price(new BigDecimal("12.95"))
                     .build());
 
@@ -34,8 +37,16 @@ public class BeerLoader implements CommandLineRunner {
                     .beerName("Galaxy Cat")
                     .beerStyle("Pale Ale")
                     .quantityToBrew(200)
-                    .upc(337010000002L)
+                    .upc(BEER_2_UPC)
                     .price(new BigDecimal("11.95"))
+                    .build());
+
+            beerRepository.save(Beer.builder()
+                    .beerName("No Hammers On The Bar")
+                    .beerStyle("Pale Ale")
+                    .quantityToBrew(200)
+                    .upc(BEER_3_UPC)
+                    .price(new BigDecimal("11.00"))
                     .build());
         }
     }
