@@ -151,3 +151,4 @@ Desktop.ini
 /target/surefire-reports/guru.springframework.msscbeerservice.web.controller.BeerControllerTest.txt
 /target/surefire-reports/TEST-guru.springframework.msscbeerservice.web.controller.BeerControllerTest.xml
 /target/generated-snippets
+/target/
